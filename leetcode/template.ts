@@ -17,6 +17,6 @@ export default function runSet() {
     console.log(`Case #${k} [${v}]`);
     const start = performance.now();
     console.log(exercise(v));
-    console.log("run time", performance.now() - start);
+    console.log("run time", (performance.now() - start).toFixed(3) + "ms");
   });
 }
