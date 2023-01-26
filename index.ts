@@ -1,3 +1,3 @@
-import { joinLines } from "./leetcode";
+import { medianOfArrays } from "./leetcode";
 
-joinLines();
+medianOfArrays();
