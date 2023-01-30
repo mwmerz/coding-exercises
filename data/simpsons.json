@@ -1,0 +1,32 @@
+[
+  {
+    "id": 5,
+    "name": "Maggie",
+    "parent_id": 2
+  },
+  {
+    "id": 1,
+    "name": "Abe",
+    "parent_id": null
+  },
+  {
+    "id": 3,
+    "name": "Bart",
+    "parent_id": 2
+  },
+  {
+    "id": 2,
+    "name": "Homer",
+    "parent_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Lisa",
+    "parent_id": 2
+  },
+  {
+    "id": 6,
+    "name": "Herb Powell",
+    "parent_id": 1
+  }
+]

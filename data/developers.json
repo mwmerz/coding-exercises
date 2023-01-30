@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Developer",
+    "parent_id": null
+  },
+  {
+    "id": 2,
+    "name": "UI Developer",
+    "parent_id": 1
+  },
+  {
+    "id": 3,
+    "name": "UX Developer",
+    "parent_id": 1
+  },
+  {
+    "id": 4,
+    "name": "Engineer",
+    "parent_id": null
+  },
+  {
+    "id": 5,
+    "name": "Software Engineer",
+    "parent_id": 4
+  },
+  {
+    "id": 6,
+    "name": "Desktop Software Engineer",
+    "parent_id": 5
+  },
+  {
+    "id": 7,
+    "name": "Mobile Software Engineer",
+    "parent_id": 5
+  },
+  {
+    "id": 8,
+    "name": "Mechanical Engineer",
+    "parent_id": 4
+  }
+]
