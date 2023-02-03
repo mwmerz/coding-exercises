@@ -1,4 +1,3 @@
-//import { medianOfArrays } from "./leetcode";
-import { renderArray } from "./coderpad";
+import { alienDictionary } from "./leetcode";
 
-renderArray();
+alienDictionary();
