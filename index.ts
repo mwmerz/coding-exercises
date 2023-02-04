@@ -1,3 +1,3 @@
-import { alienDictionary } from "./leetcode";
+import { zigZagConversation as runSet } from "./leetcode";
 
-alienDictionary();
+runSet();
