@@ -1,3 +1,3 @@
-import { zigZagConversation as runSet } from "./leetcode";
+import { permutationInString as runSet } from "./leetcode";
 
 runSet();

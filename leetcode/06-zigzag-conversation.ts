@@ -1,6 +1,7 @@
 import { performance } from "perf_hooks";
 /**
  * https://leetcode.com/problems/zigzag-conversion/
+ *
  * The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this:
  * (you may want to display this pattern in a fixed font for better legibility)
  *
@@ -17,6 +18,8 @@ import { performance } from "perf_hooks";
  * - pointer is determined by direction
  * - direction is determined by if boundary is hit
  * after letters, return array joined
+ *
+ * Solution: https://leetcode.com/problems/zigzag-conversion/solutions/3138559/typescript-zigzag-conversion-commented-o-n/
  */
 
 function convert(s: string, numRows: number): string {
