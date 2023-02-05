@@ -1,3 +1,3 @@
-import { findAllAnagrams as runSet } from "./leetcode";
+import { longestPalindromic as runSet } from "./leetcode";
 
 runSet();

@@ -6,3 +6,4 @@ export { default as zigZagConversation } from "./06-zigzag-conversation";
 export { default as findAllAnagrams } from "./438-find-all-anagrams-in-a-string";
 export { default as permutationInString } from "./567-permutation-in-string";
 export { default as alienDictionary } from "./953-alien-dictionary";
+export { default as longestPalindromic } from "./05-longest-palindromic-substring";
