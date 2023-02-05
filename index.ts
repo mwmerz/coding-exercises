@@ -1,3 +1,3 @@
-import { permutationInString as runSet } from "./leetcode";
+import { findAllAnagrams as runSet } from "./leetcode";
 
 runSet();
