@@ -20,7 +20,7 @@ import { performance } from "perf_hooks";
  */
 
 function findAnagrams(s: string, p: string): number[] {
-  // speed up time by immediatley returning edge cases, such as the string being empty.
+  // speed up time by immediately returning edge cases, such as the string being empty.
   if (s.length < 1) return [];
 
   // create arrays to hold hash
