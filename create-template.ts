@@ -1,21 +1,30 @@
 import fs from "fs";
 import yargs from "yargs";
+import { fetchProblemData, DataScrape } from "./leetcodeData";
 
 let argv = yargs(process.argv).argv;
 
 if ("_" in argv) {
   // fetch title
-  let title: string = argv._[2] as string;
+  let url: string = argv._[2] as string;
 
-  // make title file-safe
-  let newTitle =
-    title.toLowerCase().replace(".", "").split(" ").join("-") + ".ts";
-  console.log(newTitle);
+  if (!url) throw new Error("No Url Found");
 
-  // copy template.ts using title name
-  // TODO: put title and url in with command.
-  fs.copyFile("./leetcode/template.ts", "./leetcode/" + newTitle, (err) => {
-    if (err) throw err;
-    console.log("template.ts was copied to ", newTitle);
+  fetchProblemData(url).then(async (response) => {
+    if (!response) throw new Error("No response from problem.");
+    let { questionFrontendId, titleSlug, title } = response;
+    let fileContents = await fs.readFileSync("./leetcode/template.ts", "utf8");
+    fileContents = fileContents
+      .replace("{title}", `${questionFrontendId}. ${title}`)
+      .replace("{url}", url);
+
+    const fileName = `${questionFrontendId}-${titleSlug}.ts`;
+
+    try {
+      await fs.writeFileSync("./leetcode/" + fileName, fileContents);
+      console.log(fileName, "written successfully");
+    } catch (error) {
+      console.log("error", error);
+    }
   });
 }
