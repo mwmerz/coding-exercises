@@ -17,11 +17,13 @@ import { performance } from "perf_hooks";
 
 function shuffle(nums: number[], n: number): number[] {
   // create store to hold output.
+  // preset length of the array (for better time)
   let output = new Array(2 * n);
 
   // cycle through array until split (n)
   for (let i = 0; i < n; i++) {
-    // push both the current position, as well as current position + offset to output.
+    // add both the current position, as well as current position + offset to output.
+    // alternate even and odd by multiplying by two, or multiplying by two - adding one.
     output[2 * i] = nums[i];
     output[2 * i + 1] = nums[i + n];
   }
