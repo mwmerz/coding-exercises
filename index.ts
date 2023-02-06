@@ -1,3 +1,3 @@
-import { longestPalindromic as runSet } from "./leetcode";
+import { currentProblem } from "./leetcode";
 
-runSet();
+currentProblem();
