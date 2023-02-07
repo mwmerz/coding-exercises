@@ -6,5 +6,6 @@ export { default as longestPalindromic } from "./05-longest-palindromic-substrin
 export { default as zigZagConversation } from "./06-zigzag-conversation";
 export { default as findAllAnagrams } from "./438-find-all-anagrams-in-a-string";
 export { default as permutationInString } from "./567-permutation-in-string";
+export { default as currentProblem } from "./904-fruit-into-baskets";
 export { default as alienDictionary } from "./953-alien-dictionary";
-export { default as currentProblem } from "./1470-shuffle-the-array";
+export { default as shuffleArray } from "./1470-shuffle-the-array";
