@@ -33,21 +33,3 @@ pub fn jump(nums: Vec<i32>) -> i32 {
     // return jumps
     jumps
 }
-
-// fn make_it_thing() {
-//     macro_rules! make_it {
-//         ( $var:ident => $($count:expr),+) => {
-//           $($var.push($count);)+
-//         }
-//       }
-
-//     let mut count = vec![];
-
-//     make_it![count => u8::MIN, 1, 2];
-
-//     println!("{count:?}");
-// }
-
-// fn two_sum() {
-//     println!("Hello, world!");
-// }
