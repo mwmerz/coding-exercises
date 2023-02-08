@@ -8,5 +8,6 @@ export { default as findAllAnagrams } from "./438-find-all-anagrams-in-a-string"
 export { default as permutationInString } from "./567-permutation-in-string";
 export { default as fruitIntoBasked } from "./904-fruit-into-baskets";
 export { default as alienDictionary } from "./953-alien-dictionary";
+export { default as gcdStrings } from "./1071-greatest-common-divisor-of-strings";
 export { default as shuffleArray } from "./1470-shuffle-the-array";
-export { default as currentProblem } from "./1071-greatest-common-divisor-of-strings";
+export { default as currentProblem } from "./45-jump-game-ii";
