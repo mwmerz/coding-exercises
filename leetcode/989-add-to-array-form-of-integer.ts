@@ -7,7 +7,32 @@ import { performance } from "perf_hooks";
  */
 
 function addToArrayForm(num: number[], k: number): number[] {
-  return [1, 2];
+  // create output array
+  const result = [];
+
+  // create a carry digit
+  let carry = k;
+
+  // loop over number array from the back
+  for (let i = num.length - 1; i >= 0 || carry > 0; i--) {
+    if (i >= 0) {
+      // while we're not at the beginning of the number array
+      // add the current digit to the carry
+      carry += num[i];
+    }
+
+    // add the 1's column to the array
+    result.push(carry % 10);
+
+    // continue the carry
+    carry = Math.floor(carry / 10);
+  }
+
+  // return the reverse.
+  return result.reverse();
+
+  // cheap way.
+  return (BigInt(num.join("")) + BigInt(k)).toString().split("").map(Number);
 }
 
 export default function runSet() {
