@@ -11,4 +11,5 @@ export { default as fruitIntoBasked } from "./904-fruit-into-baskets";
 export { default as alienDictionary } from "./953-alien-dictionary";
 export { default as gcdStrings } from "./1071-greatest-common-divisor-of-strings";
 export { default as shuffleArray } from "./1470-shuffle-the-array";
-export { default as currentProblem } from "./989-add-to-array-form-of-integer";
+export { default as addToArray } from "./989-add-to-array-form-of-integer";
+export { default as currentProblem } from "./01-two-sum-revisted";

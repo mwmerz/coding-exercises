@@ -1,3 +1,3 @@
-import { currentProblem } from "./leetcode";
+import { currentProblem } from "./leetcode_revisited";
 
 currentProblem();
